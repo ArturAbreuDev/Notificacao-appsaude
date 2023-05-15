@@ -8,6 +8,6 @@ export function formataData(value) {
 
 export function formataCartao(value, pattern) {
     let i = 0;
-    const v = value.toString();
+    const v = value ? value.toString() : "";
     return pattern.replace(/#/g, _ => v[i++]);
 }
